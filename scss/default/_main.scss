@@ -1,9 +1,30 @@
-header {
-  background: red;
+//  Typography
+// h1,h2,h3,h4,h5,h6 {
+//   color: $slr-dgray;
+//   font-weight: normal;
+// }
+
+// Main frame work
+.container,
+body > header,
+body > footer,
+main {
+  @include grid-row();
+}
+main > article {
+  @include grid-column(7);
+}
+main > aside {
+  @include grid-column(4);
 }
 
-ul.event-meta {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
+// header {
+//   background: red;
+// }
+
+// ul.event-meta {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }

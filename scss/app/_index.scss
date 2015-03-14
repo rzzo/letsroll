@@ -1,0 +1,26 @@
+/* Background  */
+body.index { 
+  background: url('../images/index/slr-main-bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.index-article {
+  text-align: center;
+  @include grid-column($columns:8, $center:true);
+  background-image: url(/images/index/circle-bg@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+
+  &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+
+  }
+}

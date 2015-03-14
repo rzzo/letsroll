@@ -1,6 +1,12 @@
+@import "default/_typography.scss";
+
+
 @import "settings";
 // @import "foundation";
 @import "foundation/components/grid";
+@import "foundation/components/type";
+@import "foundation/components/forms";
+@import "foundation/components/buttons";
 
 // Or selectively include components
 // @import
@@ -41,5 +47,6 @@
 //   "foundation/components/visibility";
 
 
-/* Custom */
+/* SLR */
 @import "default/_main.scss";
+@import "app/_index.scss";
